@@ -1,13 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+  "interface",
+  "program",
+]
+
 [package]
 name = "spl-token-metadata-interface"
 version = "0.3.4"
-description = "Solana Program Library Token Metadata Interface"
-edition = "2021"
+authors = ["Anza Maintainers <maintainers@anza.xyz>"]
+repository = "https://github.com/solana-program/token-metadata"
+homepage = "https://solana-program.com"
 license = "Apache-2.0"
-repository = "https://github.com/solana-program/token-metadata-interface"
+edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
+path = "interface/src/lib.rs"
 
 [dependencies]
 solana-program = { git = "https://github.com/hamkj7hpo/solana.git", rev = "5208a7870826307290c30b7d80768f40267433a1" }
