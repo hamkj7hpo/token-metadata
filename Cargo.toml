@@ -9,8 +9,6 @@ members = [
 name = "spl-token-metadata-interface"
 version = "0.3.4"
 authors = ["Anza Maintainers <maintainers@anza.xyz>"]
-repository = "https://github.com/solana-program/token-metadata"
-homepage = "https://solana-program.com"
 license = "Apache-2.0"
 edition = "2021"
 
