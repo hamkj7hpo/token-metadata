@@ -17,9 +17,9 @@ crate-type = ["cdylib", "lib"]
 path = "interface/src/lib.rs"
 
 [dependencies]
+spl-pod = { git = "https://github.com/hamkj7hpo/spl-pod.git", rev = "2bcbbd69db3cb6094beaeb28e4e0c6ae01ae6f64", package = "spl-pod", default-features = false }
 solana-program = { git = "https://github.com/hamkj7hpo/solana.git", rev = "079536b934de349771fa8a0e9945bcef01f529cc", package = "solana-program" }
 spl-discriminator = "0.4.1"
-spl-pod = { git = "https://github.com/hamkj7hpo/spl-pod.git", rev = "0ff7d641b198149f6e0b1265e85b7258db87e254" }
 spl-program-error = "0.4.2"
 spl-type-length-value = "0.6.0"
 bytemuck = { version = "1.17.1", features = ["derive"] }
