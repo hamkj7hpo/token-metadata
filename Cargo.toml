@@ -24,3 +24,6 @@ spl-program-error = "0.4.2"
 spl-type-length-value = "0.6.0"
 bytemuck = { version = "1.17.1", features = ["derive"] }
 borsh = "1.5.7"
+
+[patch.crates-io]
+zeroize = "1.3.0"
