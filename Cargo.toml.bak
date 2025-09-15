@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+  "interface",
+  "program",
+]
+
+[package]
+name = "spl-token-metadata-interface"
+version = "0.3.4"
+authors = ["Anza Maintainers <maintainers@anza.xyz>"]
+license = "Apache-2.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+path = "interface/src/lib.rs"
+
+[dependencies]
+spl-pod = { git = "https://github.com/hamkj7hpo/spl-pod.git", branch = "safe-pump-compat" }
+solana-program = { git = "https://github.com/hamkj7hpo/solana.git", branch = "safe-pump-compat" }
+spl-discriminator = "0.4.1"
+spl-program-error = "0.4.2"
+spl-type-length-value = "0.6.0"
+bytemuck = { version = "1.17.1", features = ["derive"] }
+borsh = "1.5.7"
+
